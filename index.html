@@ -1,69 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Iso&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav">
-      <img src="logo.png" alt="Bankist logo" class="nav__logo" id="logo" />
-      <ul class="nav_links">
-        <li class="link">
-          <a href="#section1" class="nav_link">Contact</a>
-        </li>
-        <li class="link">
-          <a href="#section2" class="nav_link">projects</a>
-        </li>
-        <li class="link">
-          <a href="#section3" class="nav_link">about</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- <video src="home.mp4"></video> -->
-    <div class="intro">
-      <p class="name">Bala Harish Kumar</p>
-      <p class="work">web developer</p>
-      <!-- <button class="btnTOScroll">🔽</button> -->
-    </div>
-    <!-- <section id="section1" class="section--1 section">
-      <div class="education"></div>
-    </section>
-    <section id="section2" class="section--2 section">
-      <div class="know"></div>
-    </section> -->
-    <section id="section3" class="section--3 section">
-      <div class="about">
-        <div>
-          <h3>About</h3>
-          <p>
-            Hi, I'm Harish Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Delectus quasi cum rerum temporibus, in facere, laudantium ut
-            quas consequuntur aliquam, fuga nam nisi! Debitis illum, modi
-            ratione non accusamus unde.s
-          </p>
-        </div>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./image/logo.jpeg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top logo"
+          />
+          Sree Gokulam Pack</a
+        >
       </div>
-    </section>
+    </nav>
+    <div class="container-fluid">
+      <section class="row" id="hero">
+        <div
+          class="col-md-6 d-flex justify-content-center"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <div class="justify-content-center text-center title-div">
+            <div class="" id="brand-title">Sree Gokulam Pack</div>
+            <p class="fs-3">MRFS of Corrugated Boards And Boxes</p>
+          </div>
+        </div>
+        <div
+          class="col-md-6 d-flex justify-content-center"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <div class="logo-div d-flex justify-content-center">
+            <img
+              src="./image/logo.jpeg"
+              height="300px"
+              alt=""
+              class="logo mt-3"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="whowe">
+        <p class="heading">Who we are</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="content">
+              Shree Gokulam Packs In Coimbatore Is One Of The Startup Businesses
+              In The Corrugated Box Manufacturers. Also Known For Corrugated Box
+              Manufacturers, Carton Manufacturers, Corrugated Cardboard Box
+              Manufacturers, Industrial Carton Box Manufacturers, Corrugated Box
+              Paper Roll Manufacturers, Plain Corrugated Box Manufacturers,
+              Printed Corrugated Box Manufacturers, Corrugated Box Colored
+              Manufacturers And Much More . It Was Established With The Aim Of
+              Being One Of The Most Marketed Repute d Manufacturing Of Carton
+              Boxes With Good Quality And Customer Satisfaction . We Provide
+              Only The Value Added And Suitable Products For This Diverse
+              Customer With Lot Of Commitments And Sincerity Towards The
+              Customers.
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="./image/img1.jpg"
+              alt=""
+              class=""
+              srcset=""
+              width="500px"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="yellow">
+        <p class="heading">Products</p>
+        <div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+            <div class="col-md-6 description">
+              <div class="productTitle">Corrugated rolls</div>
+              <p class="content">
+                Corrugated rolls are a protective packaging product for
+                customers who require a flexible solution to protecting their
+                products in transit.
+              </p>
+              <p class="content">
+                Available in all fluting types, corrugated board in rolls has an
+                elastic property due to a special soft inner liner allowing it
+                to be delivered in rolls.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 description">
+              <div class="productTitle">White carton boxes</div>
+              <p class="content">
+                White cardboard boxes are normally used for packaging and
+                shipping, organization, storage, and often used in the food and
+                retail industries.
+              </p>
+              <p class="content">
+                Companies that aim for a cleaner look on their packaging but
+                also want a strong and durable box, prefer white cardboard
+                boxes.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+            <div class="col-md-6 description">
+              <div class="productTitle">Die Cut Boxes</div>
+              <p class="content">
+                Die cut boxes are shaped to more perfectly fit your product than
+                a standard shipping box
+              </p>
+              <p class="content">
+                Not only does this minimize the amount of wasted space during
+                shipping, but it saves on the need for excess packaging products
+                – such as foam packaging peanuts to fill that extra space;
+                another factor that can help save you money.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 description">
+              <div class="productTitle">Plain Corrugated Boxes</div>
+              <p class="content">
+                We often want to store and transmit various types and shapes of
+                products,
+              </p>
+              <p class="content">
+                Plain corrugated boxes are the best packaging solution for this.
+                Corrugated carton boxes are strong and highly durable which
+                makes it safe and secure for storing and shipping products in
+                it.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+            <div class="col-md-6 description">
+              <div class="productTitle">Pallet Pads</div>
+              <p class="content">
+                A pallet pad is a recycled chipboard sheet designed to protect
+                your products from the bothersome dirt, nails, and splinters
+                that commonly plague wooden pallets.
+              </p>
+              <p class="content">
+                Cardboard pallet pads or pallet liners are used to cover the
+                bottom of pallets to protect and to keep your product clean from
+                dust and intact from the rough uneven surface or even the heads
+                of nails of the pallets.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 description">
+              <div class="productTitle">Corrugated Card Board</div>
+              <p class="content">
+                Corrugated Cardboard is used in many packaging situations, from
+                moving house to posting laptops and packaging food products.
+              </p>
+              <p class="content">
+                This kind of cardboard can be customised to safely transport a
+                wide variety of goods with different sizing, card thickness and
+                colour available.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+            <div class="col-md-6 description">
+              <div class="productTitle">Corrugated Pads</div>
+              <p class="content">
+                Corrugated pads and sheets are flat pieces of cardboard or
+                plastic that layer between products or separate items in a
+                palletized stack. Pads and sheets also protect the floor beneath
+                a pallet.
+              </p>
+              <p class="content">
+                They can also be cut and formed into custom-sized boxes.
+              </p>
+              <p class="content">
+                Corrugated sheets provide immense protection against storms and
+                heavy winds; and are also low on maintenance.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 description">
+              <div class="productTitle">Screen Printing Boxes</div>
+              <p class="content">
+                Screen printing is an effective technique for creating bold
+                canvases, posters and artwork, but the method can also be used
+                to print fabrics and textiles, so it's great for creating all
+                sorts of custom clothing and products.
+              </p>
+              <p class="content">
+                Screen printing is a printing method that uses a plate (screen
+                mask) that uses a “screen mesh,” which is woven with synthetic
+                fibers such as polyester or metal fibers such as stainless
+                steel. It is a type of “stencil printing,” which prints on
+                target objects by passing ink through the mesh of a screen mask.
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+          </div>
+          <div class="row mt-2 productDiv">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="./image/img1.jpg" alt="" class="product" />
+            </div>
+            <div class="col-md-6 description">
+              <div class="productTitle">Colour Carton Boxes</div>
+              <p class="content">
+                Color box packaging means the folding carton and color
+                corrugated boxes made of plastic, cardboard and thin corrugated
+                board material
+              </p>
+              <p class="content">
+                Rather, these circles and squares are called “printer's color
+                blocks ” or “ process control patches.” They are there for
+                printers to check the color accuracy and quality of the printing
+                on the plastic, paper and other packaging on products that
+                consumers receive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="heading">Gallery</div>
+        <div class="gallery row d-flex justify-content-center">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide col-md-6"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./image/img1.jpg" class="img" alt="..." />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./image/img1.jpg" class="img" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="./image/img1.jpg" class="img" alt="..." />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
